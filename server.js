@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const trackRouter = require('./controllers/tracks.js');
+const cors = require('cors');
 
 mongoose.connect(process.env.MONGODB_URI);
 
